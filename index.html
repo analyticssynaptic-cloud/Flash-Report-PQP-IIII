@@ -1,0 +1,2664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PQP · Intelligence Report — Mercaderismo Ultrex · Semanas 27-31 · Julio 2026 · Vol. 05</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0">
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root {
+    --p-navy: #0b2545;
+    --p-deep: #13315c;
+    --p-blue: #1d4e89;
+    --p-sky: #2e86ab;
+    --p-aqua: #52b6c9;
+    --p-mint: #7ec8b1;
+    --p-fresh: #a8dadc;
+    --p-lav: #eef4f8;
+    --p-white: #ffffff;
+    --p-gray: #64748b;
+    --p-gray2: #94a3b8;
+    --p-border: #e5ebf1;
+    --p-line: #eef2f6;
+    --p-soft: #f4f9fc;
+    --p-green: #0e7a5f;
+    --p-orange: #a86a1a;
+    --p-red: #a12b2b;
+    --p-gold: #a37b3a;
+    --p-plum: #6b4e88;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--p-soft);
+    color: var(--p-navy);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    letter-spacing: -0.005em;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 580px;
+    background: linear-gradient(125deg, rgba(11, 37, 69, 0.90) 0%, rgba(19, 49, 92, 0.82) 50%, rgba(46, 134, 171, 0.55) 100%),
+        url('https://images.unsplash.com/photo-1595079676339-1534801ad6cf?auto=format&fit=crop&w=2200&q=90') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--p-aqua), var(--p-mint), var(--p-fresh));
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 120px;
+    background: linear-gradient(180deg, transparent, var(--p-soft));
+}
+.hero-topbar {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+    font-weight: 600;
+    z-index: 3;
+}
+.hero-topbar .brand-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+.hero-topbar .brand-mark .mk {
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 0.85rem;
+    letter-spacing: 0;
+}
+.hero-topbar .meta {
+    display: flex;
+    gap: 40px;
+}
+.hero-topbar .meta div span:first-child {
+    color: rgba(255, 255, 255, 0.55);
+    margin-right: 8px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 40px;
+    max-width: 1080px;
+}
+.hero .brand-line {
+    font-size: 0.75rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--p-fresh);
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+.hero h1 {
+    font-size: 5.4rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.30);
+}
+.hero h1 .lit {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.85);
+}
+.hero h1 .accent {
+    background: linear-gradient(90deg, var(--p-fresh), var(--p-mint));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.hero .subtitle {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: var(--p-fresh);
+}
+.hero .hero-facts {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 45px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero .hero-facts div .n {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+.hero .hero-facts div .l {
+    font-size: 0.66rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    max-width: 1360px;
+    margin: -90px auto 0;
+    padding: 0 20px;
+    position: relative;
+    z-index: 3;
+}
+
+/* ================= EXECUTIVE SUMMARY ================= */
+.exec-summary {
+    background: var(--p-white);
+    padding: 60px;
+    border-radius: 4px;
+    box-shadow: 0 25px 55px -10px rgba(11, 37, 69, 0.14);
+    margin-bottom: 45px;
+    border: 1px solid var(--p-border);
+    position: relative;
+    overflow: hidden;
+}
+.exec-summary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--p-blue), var(--p-aqua), var(--p-mint));
+}
+.exec-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--p-line);
+    padding-bottom: 24px;
+    margin-bottom: 44px;
+}
+.exec-head .kicker {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--p-gray);
+    font-weight: 700;
+}
+.exec-head h2 {
+    font-size: 1.7rem;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--p-navy);
+}
+
+.exec-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 50px;
+}
+.exec-item {
+    display: flex;
+    gap: 20px;
+}
+.exec-item .ico {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--p-lav);
+    color: var(--p-blue);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.exec-item h4 {
+    margin: 0 0 8px;
+    color: var(--p-navy);
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+.exec-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--p-gray);
+}
+.exec-item p strong {
+    color: var(--p-navy);
+    font-weight: 700;
+}
+
+/* ================= SPOTLIGHT ================= */
+.spotlight {
+    background: linear-gradient(125deg, var(--p-navy) 0%, var(--p-deep) 55%, var(--p-blue) 100%);
+    color: white;
+    border-radius: 4px;
+    padding: 44px 50px;
+    margin-bottom: 45px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    box-shadow: 0 20px 45px rgba(11, 37, 69, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+.spotlight::after {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(168, 218, 220, 0.20), transparent 70%);
+    border-radius: 50%;
+}
+.sp-stat {
+    text-align: left;
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+.sp-stat:last-child {
+    border-right: none;
+}
+.sp-stat .sp-lbl {
+    font-size: 0.62rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--p-fresh);
+    font-weight: 700;
+    margin-bottom: 14px;
+    opacity: 0.9;
+}
+.sp-stat h2 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin: 0;
+    color: white;
+    letter-spacing: -1.5px;
+    line-height: 1;
+}
+.sp-stat h2 small {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 4px;
+}
+.sp-stat .sp-sub {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.62);
+    margin-top: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* ================= SECTION ================= */
+.section-hero {
+    display: flex;
+    align-items: baseline;
+    gap: 22px;
+    margin: 70px 0 6px;
+}
+.section-hero .num {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--p-gray);
+    font-weight: 800;
+    padding: 6px 12px;
+    border: 1px solid var(--p-border);
+    border-radius: 2px;
+}
+.section-title {
+    font-size: 2.3rem;
+    font-weight: 800;
+    text-align: left;
+    color: var(--p-navy);
+    margin: 0;
+    letter-spacing: -1.2px;
+    line-height: 1.1;
+}
+.section-title em {
+    font-style: normal;
+    color: var(--p-blue);
+    font-weight: 800;
+}
+.section-sub {
+    color: var(--p-gray);
+    font-size: 0.95rem;
+    margin: 14px 0 34px;
+    max-width: 880px;
+    line-height: 1.65;
+}
+
+/* ================= KPI ================= */
+.kpi-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 26px;
+}
+.kpi-card {
+    background: var(--p-white);
+    padding: 28px 26px;
+    border-radius: 4px;
+    border: 1px solid var(--p-border);
+    transition: 0.2s;
+    position: relative;
+}
+.kpi-card:hover {
+    border-color: var(--p-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(11, 37, 69, 0.08);
+}
+.kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 40px;
+    background: var(--p-blue);
+}
+.kpi-card .k-ico {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--p-blue);
+    font-size: 1rem;
+}
+.kpi-card .k-lbl {
+    font-size: 0.66rem;
+    font-weight: 800;
+    color: var(--p-gray);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.kpi-card h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--p-navy);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1;
+}
+.kpi-card h3 small {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--p-gray);
+    margin-left: 3px;
+}
+.kpi-card .k-note {
+    font-size: 0.78rem;
+    color: var(--p-gray);
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid var(--p-line);
+    line-height: 1.55;
+}
+
+.kpi-card.pos::before,
+.kpi-card.pos h3,
+.kpi-card.pos .k-ico {
+    color: var(--p-green);
+    background-color: transparent;
+}
+.kpi-card.pos::before {
+    background: var(--p-green);
+}
+.kpi-card.warn::before,
+.kpi-card.warn h3,
+.kpi-card.warn .k-ico {
+    color: var(--p-orange);
+}
+.kpi-card.warn::before {
+    background: var(--p-orange);
+}
+.kpi-card.neg::before,
+.kpi-card.neg h3,
+.kpi-card.neg .k-ico {
+    color: var(--p-red);
+}
+.kpi-card.neg::before {
+    background: var(--p-red);
+}
+.kpi-card.plum::before,
+.kpi-card.plum h3,
+.kpi-card.plum .k-ico {
+    color: var(--p-plum);
+}
+.kpi-card.plum::before {
+    background: var(--p-plum);
+}
+
+/* ================= CHARTS ================= */
+.chart-box {
+    background: var(--p-white);
+    padding: 36px;
+    border-radius: 4px;
+    border: 1px solid var(--p-border);
+    width: 100%;
+    margin-bottom: 26px;
+}
+.chart-box .cb-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+.chart-box h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: var(--p-navy);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+.chart-box .cb-tag {
+    font-size: 0.62rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--p-gray);
+    font-weight: 700;
+}
+.chart-box .cb-sub {
+    font-size: 0.85rem;
+    color: var(--p-gray);
+    margin: 0 0 26px;
+    line-height: 1.6;
+    max-width: 780px;
+}
+.chart-container {
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.chart-container-tall {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.chart-container-sm {
+    height: 320px;
+    width: 100%;
+    position: relative;
+}
+.chart-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    margin-bottom: 26px;
+}
+.chart-split-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 22px;
+    margin-bottom: 26px;
+}
+.chart-split-8-4 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 26px;
+    margin-bottom: 26px;
+}
+
+/* ================= HEATMAP ================= */
+.heatmap-wrap {
+    background: var(--p-white);
+    padding: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--p-border);
+    margin-bottom: 26px;
+}
+.heatmap-wrap .cb-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+.heatmap-wrap h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: var(--p-navy);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+.heatmap-wrap .cb-tag {
+    font-size: 0.62rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--p-gray);
+    font-weight: 700;
+}
+.heatmap-wrap .cb-sub {
+    font-size: 0.85rem;
+    color: var(--p-gray);
+    margin: 0 0 30px;
+    line-height: 1.6;
+    max-width: 820px;
+}
+.heatmap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 240px repeat(5, 1fr) 90px;
+    gap: 4px;
+}
+.hm-col-header {
+    font-size: 0.68rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--p-gray);
+    font-weight: 800;
+    text-align: center;
+    padding: 8px 4px 14px;
+    border-bottom: 1px solid var(--p-line);
+}
+.hm-row-header {
+    padding: 14px 10px;
+    font-size: 0.83rem;
+    color: var(--p-navy);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hm-row-header small {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--p-gray);
+    font-weight: 500;
+    margin-top: 3px;
+}
+.hm-cell {
+    min-height: 44px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    background: var(--p-line);
+    color: var(--p-gray2);
+    transition: 0.2s;
+    position: relative;
+}
+.hm-cell:hover {
+    transform: scale(1.06);
+    z-index: 2;
+    box-shadow: 0 6px 16px rgba(11, 37, 69, 0.18);
+}
+.hm-cell.h0 {
+    background: #f4f7fa;
+    color: var(--p-gray2);
+}
+.hm-cell.h1 {
+    background: #d9e6ee;
+    color: var(--p-navy);
+}
+.hm-cell.h2 {
+    background: #a8c7de;
+    color: white;
+}
+.hm-cell.h3 {
+    background: var(--p-blue);
+    color: white;
+}
+.hm-cell.h4 {
+    background: var(--p-navy);
+    color: white;
+}
+.hm-cell.hv {
+    background: var(--p-green);
+    color: white;
+}
+.hm-cell.hv::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+.hm-total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: var(--p-navy);
+    background: var(--p-soft);
+    font-size: 1.1rem;
+    border-left: 1px solid var(--p-line);
+}
+.hm-legend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid var(--p-line);
+    font-size: 0.78rem;
+    color: var(--p-gray);
+}
+.hm-legend .scale {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hm-legend .scale-boxes {
+    display: flex;
+    gap: 3px;
+}
+.hm-legend .scale-boxes span {
+    width: 22px;
+    height: 12px;
+    border-radius: 2px;
+}
+.hm-legend .note-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.hm-legend .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--p-green);
+    position: relative;
+}
+.hm-legend .dot::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* ================= TABLES ================= */
+.table-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    margin-bottom: 30px;
+}
+.table-container {
+    background: white;
+    padding: 32px;
+    border-radius: 4px;
+    border: 1px solid var(--p-border);
+}
+.table-container h3 {
+    margin: 0 0 4px;
+    font-size: 1.05rem;
+    color: var(--p-navy);
+    font-weight: 800;
+    letter-spacing: -0.3px;
+}
+.table-container .tbl-sub {
+    margin: 0 0 20px;
+    font-size: 0.8rem;
+    color: var(--p-gray);
+    line-height: 1.5;
+}
+.table-data {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-data th {
+    text-align: left;
+    padding: 12px 8px 12px 0;
+    color: var(--p-gray);
+    border-bottom: 1px solid var(--p-navy);
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.table-data td {
+    padding: 13px 8px 13px 0;
+    border-bottom: 1px solid var(--p-line);
+    font-size: 0.87rem;
+    font-weight: 500;
+    color: var(--p-navy);
+}
+.table-data tr:last-child td {
+    border-bottom: none;
+    border-top: 1px solid var(--p-navy);
+    font-weight: 800;
+    padding-top: 16px;
+    color: var(--p-blue);
+}
+.table-data .num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+}
+.pill {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 0.66rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border: 1px solid;
+}
+.pill.neutral {
+    background: var(--p-lav);
+    color: var(--p-gray);
+    border-color: var(--p-border);
+}
+.pill.accent {
+    background: #dbe7f0;
+    color: var(--p-blue);
+    border-color: #b9cfdf;
+}
+.pill.pos {
+    background: #e0efe9;
+    color: var(--p-green);
+    border-color: #b8dbcc;
+}
+.pill.warn {
+    background: #f7edd6;
+    color: var(--p-orange);
+    border-color: #e2c896;
+}
+.pill.neg {
+    background: #f4dcdc;
+    color: var(--p-red);
+    border-color: #e0b1b1;
+}
+
+/* ================= INSIGHT ================= */
+.insight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-bottom: 45px;
+}
+.insight-card {
+    background: var(--p-white);
+    padding: 32px;
+    border-radius: 4px;
+    border: 1px solid var(--p-border);
+    border-left: 4px solid var(--p-blue);
+    display: flex;
+    gap: 22px;
+}
+.insight-card.warn {
+    border-left-color: var(--p-orange);
+}
+.insight-card.pos {
+    border-left-color: var(--p-green);
+}
+.insight-card.neg {
+    border-left-color: var(--p-red);
+}
+.insight-card.plum {
+    border-left-color: var(--p-plum);
+}
+.insight-card .in-ico {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--p-blue);
+    font-size: 1rem;
+    padding-top: 4px;
+}
+.insight-card.warn .in-ico {
+    color: var(--p-orange);
+}
+.insight-card.pos .in-ico {
+    color: var(--p-green);
+}
+.insight-card.neg .in-ico {
+    color: var(--p-red);
+}
+.insight-card.plum .in-ico {
+    color: var(--p-plum);
+}
+.insight-card .in-tag {
+    font-size: 0.62rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--p-blue);
+    margin-bottom: 8px;
+}
+.insight-card.warn .in-tag {
+    color: var(--p-orange);
+}
+.insight-card.pos .in-tag {
+    color: var(--p-green);
+}
+.insight-card.neg .in-tag {
+    color: var(--p-red);
+}
+.insight-card.plum .in-tag {
+    color: var(--p-plum);
+}
+.insight-card h5 {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+    color: var(--p-navy);
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    line-height: 1.3;
+}
+.insight-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--p-gray);
+    line-height: 1.7;
+}
+.insight-card p strong {
+    color: var(--p-navy);
+    font-weight: 700;
+}
+
+/* ================= STRATEGY BOX ================= */
+.strategy-box {
+    background: linear-gradient(135deg, var(--p-navy) 0%, var(--p-deep) 55%, var(--p-blue) 100%);
+    color: white;
+    padding: 65px 55px;
+    border-radius: 4px;
+    margin-bottom: 55px;
+    position: relative;
+    overflow: hidden;
+}
+.strategy-box::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(circle, rgba(126, 200, 177, 0.15), transparent 70%);
+    border-radius: 50%;
+}
+.strategy-box .kick {
+    font-size: 0.7rem;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: var(--p-fresh);
+    font-weight: 700;
+    margin-bottom: 16px;
+    position: relative;
+}
+.strategy-box h3 {
+    font-size: 1.9rem;
+    margin: 0 0 12px;
+    color: white;
+    font-weight: 800;
+    letter-spacing: -1px;
+    position: relative;
+}
+.strategy-box .sub {
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 40px;
+    font-size: 0.98rem;
+    max-width: 720px;
+    line-height: 1.65;
+    position: relative;
+}
+.strat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    position: relative;
+}
+.strat-item {
+    padding: 24px 26px;
+    border-left: 2px solid var(--p-fresh);
+    background: rgba(255, 255, 255, 0.02);
+}
+.strat-item h6 {
+    color: var(--p-fresh);
+    font-size: 0.68rem;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.strat-item h6 .st-ico {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--p-fresh);
+    font-size: 0.85rem;
+}
+.strat-item p {
+    font-size: 0.88rem;
+    opacity: 0.9;
+    line-height: 1.65;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* ================= PDV CARDS ================= */
+.pdv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 42px;
+}
+.pdv-card {
+    background: var(--p-white);
+    border-radius: 4px;
+    border: 1px solid var(--p-border);
+    padding: 32px;
+    transition: 0.2s;
+}
+.pdv-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(11, 37, 69, 0.08);
+    border-color: var(--p-blue);
+}
+.pdv-card .pdv-tag {
+    font-size: 0.62rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--p-blue);
+    margin-bottom: 12px;
+}
+.pdv-card.top .pdv-tag {
+    color: var(--p-green);
+}
+.pdv-card.warn .pdv-tag {
+    color: var(--p-orange);
+}
+.pdv-card.neg .pdv-tag {
+    color: var(--p-red);
+}
+.pdv-card h4 {
+    font-size: 1.35rem;
+    margin: 0 0 20px;
+    color: var(--p-navy);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+.pdv-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--p-line);
+    font-size: 0.85rem;
+}
+.pdv-stat:last-of-type {
+    border-bottom: none;
+}
+.pdv-stat .k {
+    color: var(--p-gray);
+    font-weight: 500;
+}
+.pdv-stat .v {
+    font-weight: 800;
+    color: var(--p-navy);
+    font-variant-numeric: tabular-nums;
+}
+.pdv-stat .v.pos {
+    color: var(--p-green);
+}
+.pdv-stat .v.neg {
+    color: var(--p-red);
+}
+.pdv-stat .v.warn {
+    color: var(--p-orange);
+}
+.pdv-note {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--p-line);
+    font-size: 0.82rem;
+    color: var(--p-gray);
+    line-height: 1.55;
+    font-style: italic;
+}
+
+/* ================= COMENTARIOS DE CAMPO ================= */
+.comentarios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-bottom: 45px;
+}
+.comentario-card {
+    background: var(--p-white);
+    border: 1px solid var(--p-border);
+    border-radius: 4px;
+    padding: 30px 32px;
+    border-top: 3px solid var(--p-blue);
+    transition: 0.2s;
+}
+.comentario-card:hover {
+    box-shadow: 0 12px 30px rgba(11, 37, 69, 0.07);
+    border-top-color: var(--p-aqua);
+}
+.comentario-card.destacado {
+    border-top-color: var(--p-green);
+}
+.comentario-card.alerta {
+    border-top-color: var(--p-orange);
+}
+.comentario-card.critico {
+    border-top-color: var(--p-red);
+}
+.comentario-card .com-fecha {
+    font-size: 0.65rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--p-gray);
+    margin-bottom: 6px;
+}
+.comentario-card .com-pdv {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--p-navy);
+    margin: 0 0 14px;
+    letter-spacing: -0.3px;
+}
+.comentario-card .com-body {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: var(--p-gray);
+    margin: 0;
+}
+.comentario-card .com-body strong {
+    color: var(--p-navy);
+    font-weight: 700;
+}
+.comentario-card .com-footer {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--p-line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--p-gray2);
+    font-weight: 700;
+}
+.comentario-card .com-footer .com-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 2px;
+    font-weight: 800;
+    font-size: 0.62rem;
+}
+.comentario-card .com-footer .com-tag.accion {
+    background: #dbe7f0;
+    color: var(--p-blue);
+}
+.comentario-card .com-footer .com-tag.exito {
+    background: #e0efe9;
+    color: var(--p-green);
+}
+.comentario-card .com-footer .com-tag.riesgo {
+    background: #f7edd6;
+    color: var(--p-orange);
+}
+.comentario-card .com-footer .com-tag.urgente {
+    background: #f4dcdc;
+    color: var(--p-red);
+}
+
+/* ================= QUOTES ================= */
+.quotes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-bottom: 45px;
+}
+.quote-card {
+    background: var(--p-white);
+    border: 1px solid var(--p-border);
+    border-left: 3px solid var(--p-aqua);
+    padding: 30px;
+    border-radius: 4px;
+}
+.quote-card.warn {
+    border-left-color: var(--p-orange);
+}
+.quote-card.neg {
+    border-left-color: var(--p-red);
+}
+.quote-card.pos {
+    border-left-color: var(--p-green);
+}
+.quote-card .qm {
+    font-size: 2.6rem;
+    line-height: 0.6;
+    color: var(--p-aqua);
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+.quote-card.warn .qm {
+    color: var(--p-orange);
+}
+.quote-card.neg .qm {
+    color: var(--p-red);
+}
+.quote-card.pos .qm {
+    color: var(--p-green);
+}
+.quote-card p {
+    margin: 0 0 18px;
+    color: var(--p-navy);
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+.quote-card .q-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--p-line);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--p-gray);
+    font-weight: 700;
+}
+
+/* ================= BRANDS LIST ================= */
+.brands-list {
+    background: var(--p-white);
+    padding: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--p-border);
+    margin-bottom: 26px;
+}
+.brands-list .cb-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+.brands-list h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: var(--p-navy);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+.brands-list .cb-tag {
+    font-size: 0.62rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--p-gray);
+    font-weight: 700;
+}
+.brands-list .cb-sub {
+    font-size: 0.85rem;
+    color: var(--p-gray);
+    margin: 0 0 30px;
+    line-height: 1.6;
+    max-width: 780px;
+}
+.brand-row {
+    display: grid;
+    grid-template-columns: 160px 1fr 60px 60px;
+    gap: 26px;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--p-line);
+}
+.brand-row:last-child {
+    border-bottom: none;
+}
+.brand-name {
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--p-navy);
+    letter-spacing: -0.3px;
+}
+.brand-name small {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--p-gray);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+.brand-bar {
+    height: 6px;
+    background: var(--p-line);
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.brand-bar-fill {
+    height: 100%;
+    background: var(--p-blue);
+    transition: 0.5s;
+    border-radius: 2px;
+}
+.brand-bar-fill.lead {
+    background: var(--p-red);
+}
+.brand-count {
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--p-navy);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+.brand-pct {
+    font-size: 0.78rem;
+    color: var(--p-gray);
+    text-align: right;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ================= RECOMMENDATIONS ================= */
+.reco {
+    background: var(--p-white);
+    border: 1px solid var(--p-border);
+    padding: 36px 40px;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 70px 1fr 210px;
+    gap: 32px;
+    align-items: start;
+    border-left: 3px solid var(--p-blue);
+}
+.reco.urgent {
+    border-left-color: var(--p-red);
+}
+.reco.high {
+    border-left-color: var(--p-orange);
+}
+.reco.mid {
+    border-left-color: var(--p-blue);
+}
+.reco.low {
+    border-left-color: var(--p-green);
+}
+.reco .r-num {
+    font-size: 2.6rem;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--p-navy);
+    letter-spacing: -2px;
+}
+.reco.urgent .r-num {
+    color: var(--p-red);
+}
+.reco.high .r-num {
+    color: var(--p-orange);
+}
+.reco.mid .r-num {
+    color: var(--p-blue);
+}
+.reco.low .r-num {
+    color: var(--p-green);
+}
+.reco h4 {
+    font-size: 1.25rem;
+    margin: 0 0 8px;
+    color: var(--p-navy);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+}
+.reco .r-cat {
+    font-size: 0.62rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--p-blue);
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+.reco.urgent .r-cat {
+    color: var(--p-red);
+}
+.reco.high .r-cat {
+    color: var(--p-orange);
+}
+.reco.low .r-cat {
+    color: var(--p-green);
+}
+.reco p {
+    margin: 0;
+    font-size: 0.93rem;
+    line-height: 1.7;
+    color: var(--p-gray);
+}
+.reco p strong {
+    color: var(--p-navy);
+    font-weight: 700;
+}
+.reco .r-side {
+    padding-left: 30px;
+    border-left: 1px solid var(--p-line);
+}
+.reco .r-metric {
+    margin-bottom: 18px;
+}
+.reco .r-metric:last-child {
+    margin-bottom: 0;
+}
+.reco .r-metric .rm-lbl {
+    font-size: 0.62rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--p-gray);
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+.reco .r-metric .rm-val {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--p-navy);
+    letter-spacing: -0.3px;
+}
+
+/* ================= FOOTER ================= */
+.foot {
+    background: linear-gradient(135deg, var(--p-navy), var(--p-deep) 60%, var(--p-blue));
+    color: white;
+    padding: 90px 0 40px;
+    margin-top: 70px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+.foot-in {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.foot-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 55px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.foot-brand {
+    font-size: 3.2rem;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    line-height: 1;
+    margin: 0 0 14px;
+}
+.foot-brand .accent {
+    background: linear-gradient(90deg, var(--p-fresh), var(--p-mint));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.foot-brand-sub {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 600;
+}
+.foot-col h6 {
+    font-size: 0.66rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--p-fresh);
+    font-weight: 800;
+    margin: 0 0 18px;
+}
+.foot-col p {
+    font-size: 0.87rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0 0 8px;
+}
+.foot-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.42);
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .exec-grid,
+    .insight-grid,
+    .strat-grid,
+    .chart-split,
+    .chart-split-8-4,
+    .quotes-grid,
+    .comentarios-grid {
+        grid-template-columns: 1fr;
+    }
+    .pdv-grid,
+    .chart-split-3,
+    .table-wrapper,
+    .foot-top {
+        grid-template-columns: 1fr;
+    }
+    .spotlight {
+        grid-template-columns: 1fr 1fr;
+    }
+    .sp-stat {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+        padding-bottom: 20px;
+    }
+    .kpi-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+    .reco {
+        grid-template-columns: 1fr;
+    }
+    .reco .r-side {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid var(--p-line);
+        padding-top: 20px;
+    }
+    .heatmap {
+        grid-template-columns: 160px repeat(5, 1fr) 70px;
+    }
+    .hero-topbar {
+        display: none;
+    }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-topbar">
+        <div class="brand-mark"><div class="mk">P</div><span>PQP · Intelligence</span></div>
+        <div class="meta">
+            <div><span>Vol.</span><b>05</b></div>
+            <div><span>Emisión</span><b>28 · 07 · 26</b></div>
+            <div><span>Alcance</span><b>Interno</b></div>
+        </div>
+    </div>
+    <div class="hero-content">
+        <div class="brand-line">Portafolio Ultrex · Canal Tradicional</div>
+        <h1><span class="lit">Radar</span> <span class="accent">Mensual</span></h1>
+        <p class="subtitle">Intelligence Report · Ruta Mercaderismo Medellín · Bello · Niquía</p>
+        <div class="hero-facts">
+            <div><div class="n">85</div><div class="l">Visitas</div></div>
+            <div><div class="n">16</div><div class="l">Puntos de venta</div></div>
+            <div><div class="n">10</div><div class="l">Categorías</div></div>
+            <div><div class="n">$79.2 M</div><div class="l">Pipeline</div></div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- EXECUTIVE SUMMARY -->
+    <section class="exec-summary">
+        <div class="exec-head">
+            <span class="kicker">Resumen ejecutivo · Semanas 27-31 · 01 al 28 Julio 2026</span>
+            <h2>Lectura gerencial</h2>
+        </div>
+        <div class="exec-grid">
+            <div class="exec-item">
+                <div class="ico"><i class="fa-regular fa-compass"></i></div>
+                <div>
+                    <h4>Objetivo del reporte</h4>
+                    <p>Consolidar el primer mes completo de operación de mercaderismo Ultrex en la ruta Medellín — Bello — Niquía, y medir <strong>comportamiento del canal</strong>, <strong>desempeño de portafolio</strong> y <strong>señales competitivas</strong> con datos depurados y consistentes por punto de venta.</p>
+                </div>
+            </div>
+            <div class="exec-item">
+                <div class="ico"><i class="fa-regular fa-map"></i></div>
+                <div>
+                    <h4>Alcance del período</h4>
+                    <p><strong>85 visitas</strong> en <strong>16 puntos de venta</strong>, del 01 al 28 de julio. Se corrigió, por segundo corte consecutivo, una visita del día 17 mal etiquetada como "La Chinca Bello" cuando el GPS confirma <strong>La Chinga Niquía</strong> (22 m de diferencia) — un patrón de captura que ya amerita ajuste en la app, no solo corrección manual.</p>
+                </div>
+            </div>
+            <div class="exec-item">
+                <div class="ico"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div>
+                    <h4>Doble alerta en el líder</h4>
+                    <p><strong>Mercados y Carnes O.R</strong> sigue siendo el mayor vendedor (59 uds., 51.3% del sell-out), pero acumula <strong>tercer corte consecutivo en $0 de pipeline</strong> y el precio que se había estabilizado en $16.990 <strong>volvió a dispararse a $21.300 (+25.4%)</strong> en las dos últimas visitas.</p>
+                </div>
+            </div>
+            <div class="exec-item">
+                <div class="ico"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div>
+                    <h4>Motor emergente</h4>
+                    <p><strong>La 80 Cabañas</strong> se consolida como el segundo motor de ventas: <strong>35 unidades — 30.4%</strong> del sell-out, y el mayor pipeline de la ruta ($13.72 M). Pero también acumula el mayor riesgo operativo: bodega cerrada bloqueó dos visitas seguidas y ya hay alerta de un nuevo agotado (líquido 4 L).</p>
+                </div>
+            </div>
+            <div class="exec-item">
+                <div class="ico"><i class="fa-solid fa-flag"></i></div>
+                <div>
+                    <h4>Dos bajas confirmadas</h4>
+                    <p><strong>Boom la 33</strong> (cambio de distribuidor + baja rotación, confirmado por la compradora Paola Vázquez) y <strong>Boom la América</strong> (suspensión "a nivel empresa", confirmada por la coordinadora Milena) llevan <strong>26 días sin visita</strong> — ya no son casos "sin resolver", son bajas que requieren decisión administrativa.</p>
+                </div>
+            </div>
+            <div class="exec-item">
+                <div class="ico"><i class="fa-solid fa-bell"></i></div>
+                <div>
+                    <h4>Punto de dolor</h4>
+                    <p><strong>146 quiebres de stock</strong> (+57% vs. corte anterior). La Chinga Niquía lidera con <strong>29 instancias</strong>, y Merca Alex casi duplica su quiebre (13 → 22) — la segunda peor tendencia del corte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPOTLIGHT KPI -->
+    <div class="spotlight">
+        <div class="sp-stat">
+            <div class="sp-lbl">Efectividad</div>
+            <h2>23.5<small>%</small></h2>
+            <div class="sp-sub">20 ventas cerradas / 85 visitas realizadas</div>
+        </div>
+        <div class="sp-stat">
+            <div class="sp-lbl">Ventas efectivas</div>
+            <h2>115 <small>uds.</small></h2>
+            <div class="sp-sub">51% concentradas en Mercados y Carnes O.R</div>
+        </div>
+        <div class="sp-stat">
+            <div class="sp-lbl">Precios fuera de rango</div>
+            <h2>22.4<small>%</small></h2>
+            <div class="sp-sub">30 de 134 chequeos superan la banda PVP</div>
+        </div>
+        <div class="sp-stat">
+            <div class="sp-lbl">Pipeline sugerido</div>
+            <h2>$79.2<small>M</small></h2>
+            <div class="sp-sub">Pedidos propuestos a 13 PDVs de la ruta</div>
+        </div>
+        <div class="sp-stat">
+            <div class="sp-lbl">Cobertura POP</div>
+            <h2>56<small>%</small></h2>
+            <div class="sp-sub">9 de 16 PDVs con material Ultrex activado</div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 01 · COMPORTAMIENTO -->
+    <div class="section-hero">
+        <div class="num">01</div>
+        <h2 class="section-title">Comportamiento de <em>la ruta</em></h2>
+    </div>
+    <p class="section-sub">Radiografía del primer mes completo de operación — cómo se está invirtiendo el tiempo de la mercaderista, dónde se concentra el esfuerzo y qué tanto de ese esfuerzo se traduce en cierre efectivo. Las 85 visitas se repartieron en veintidós jornadas operativas a lo largo de las semanas 27 a 31, con cadencia promedio de 3.9 visitas por día.</p>
+
+    <div class="kpi-row">
+        <div class="kpi-card">
+            <div class="k-ico"><i class="fa-regular fa-user"></i></div>
+            <div class="k-lbl">Mercaderista activa</div>
+            <h3>01</h3>
+            <div class="k-note">Natalia Rueda Sepúlveda · cobertura íntegra de la ruta Medellín, Bello y Niquía.</div>
+        </div>
+        <div class="kpi-card">
+            <div class="k-ico"><i class="fa-regular fa-calendar-days"></i></div>
+            <div class="k-lbl">Visitas / día</div>
+            <h3>3.9</h3>
+            <div class="k-note">Cadencia sostenida durante los veintidós días operativos del corte.</div>
+        </div>
+        <div class="kpi-card pos">
+            <div class="k-ico"><i class="fa-regular fa-circle-check"></i></div>
+            <div class="k-lbl">Conversión</div>
+            <h3>23.5<small>%</small></h3>
+            <div class="k-note">20 ventas cerradas sobre 85 visitas. Sube a 57.1% al filtrar solo visitas con gestión comercial.</div>
+        </div>
+        <div class="kpi-card warn">
+            <div class="k-ico"><i class="fa-regular fa-circle-question"></i></div>
+            <div class="k-lbl">No-venta</div>
+            <h3>17.6<small>%</small></h3>
+            <div class="k-note">Motivo dominante: "Otro" (10). Segundo: aún tiene inventario (4).</div>
+        </div>
+    </div>
+
+    <div class="chart-split-8-4">
+        <div class="chart-box">
+            <div class="cb-head">
+                <h3>Cadencia diaria de la ruta</h3>
+                <div class="cb-tag">Fig. 01</div>
+            </div>
+            <p class="cb-sub">Distribución de las 85 visitas por día calendario a lo largo de veintidós jornadas operativas (01-28 Jul). La cadencia se mantiene estable semana tras semana, sin caídas significativas.</p>
+            <div class="chart-container"><canvas id="chartCadencia"></canvas></div>
+        </div>
+        <div class="chart-box">
+            <div class="cb-head">
+                <h3>Estado de la visita</h3>
+                <div class="cb-tag">Fig. 02</div>
+            </div>
+            <p class="cb-sub">Composición de los cierres registrados en campo. El 59% de las visitas se dedica a inventario, orden y control de precios sin gestión de venta directa — propio de la operación de mantenimiento de una ruta ya instalada.</p>
+            <div class="chart-container"><canvas id="chartEstado"></canvas></div>
+        </div>
+    </div>
+
+    <!-- HEATMAP MATRIX -->
+    <div class="heatmap-wrap">
+        <div class="cb-head">
+            <h3>Matriz de actividad · Punto de venta × semana</h3>
+            <div class="cb-tag">Fig. 03</div>
+        </div>
+        <p class="cb-sub">Cada celda agrega las visitas de esa semana operativa. La intensidad del azul indica número de visitas; el verde marca semanas con venta efectiva cerrada. Este corte incorpora la semana 31 (22-28 jul) y corrige, otra vez, una visita del día 17 mal etiquetada (La Chinca Bello → La Chinga Niquía) confirmada por coordenadas GPS.</p>
+
+        <div class="heatmap">
+            <div></div>
+            <div class="hm-col-header">Sem. 27</div>
+            <div class="hm-col-header">Sem. 28</div>
+            <div class="hm-col-header">Sem. 29</div>
+            <div class="hm-col-header">Sem. 30</div>
+            <div class="hm-col-header">Sem. 31</div>
+            <div class="hm-col-header">Total</div>
+
+            <div class="hm-row-header">La 80 Cabañas<small>Motor de ventas emergente · mayor pipeline</small></div>
+            <div class="hm-cell hv">3</div>
+            <div class="hm-cell hv">4</div>
+            <div class="hm-cell hv">2</div>
+            <div class="hm-cell hv">3</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-total">13</div>
+
+            <div class="hm-row-header">Mercados y Carnes O.R<small>Líder en ventas · precio relapsa a +25%</small></div>
+            <div class="hm-cell hv">3</div>
+            <div class="hm-cell hv">3</div>
+            <div class="hm-cell hv">3</div>
+            <div class="hm-cell h2">2</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-total">12</div>
+
+            <div class="hm-row-header">Maxiofertas Niquía<small>Precio se aleja del rango (+35%)</small></div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell hv">3</div>
+            <div class="hm-cell h2">2</div>
+            <div class="hm-cell hv">2</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-total">9</div>
+
+            <div class="hm-row-header">Comerc. La 2000<small>Faltante sin seguimiento · 18 días</small></div>
+            <div class="hm-cell h2">2</div>
+            <div class="hm-cell hv">3</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell hv">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-total">8</div>
+
+            <div class="hm-row-header">La Chinca Bello<small>Pipeline moderado · ventas puntuales</small></div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell hv">2</div>
+            <div class="hm-cell hv">1</div>
+            <div class="hm-cell hv">2</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-total">6</div>
+
+            <div class="hm-row-header">Dinastía Plaza De Flores<small>Almacén sin mercancía · sin ventas</small></div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h2">2</div>
+            <div class="hm-cell h2">2</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-total">6</div>
+
+            <div class="hm-row-header">Dinastía San Javier<small>Almacén desabastecido</small></div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell hv">1</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-total">4</div>
+
+            <div class="hm-row-header">La Bendición<small>1 mes sin ingreso de mercancía</small></div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-total">4</div>
+
+            <div class="hm-row-header">Mercados La Raza<small>Cobertura estable · sin ventas</small></div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-total">4</div>
+
+            <div class="hm-row-header">Merca Alex<small>Quiebres casi se duplican</small></div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell hv">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-total">4</div>
+
+            <div class="hm-row-header">Dinastía Castilla<small>Cadena Dinastía · sin ventas</small></div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-total">4</div>
+
+            <div class="hm-row-header">Tropiexpress<small>12 días sin visita · despacho cada 8 días</small></div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-total">3</div>
+
+            <div class="hm-row-header">La Chinga Niquía<small>Peor quiebre de la ruta · sin visita en S31</small></div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell hv">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-total">3</div>
+
+            <div class="hm-row-header">Supermercado La 2000 Niquía<small>Retención valida · primer pipeline</small></div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h2">2</div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-total">3</div>
+
+            <div class="hm-row-header">Boom la 33<small>Descontinuado · confirmado por comprador</small></div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-total">1</div>
+
+            <div class="hm-row-header">Boom la América<small>Suspendido a nivel empresa</small></div>
+            <div class="hm-cell h1">1</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-cell h0">·</div>
+            <div class="hm-total">1</div>
+
+            <div class="hm-row-header" style="border-top: 1px solid var(--p-navy); padding-top: 18px; font-weight: 900;">Total semana</div>
+            <div class="hm-cell h3" style="min-height: 52px; font-size: 1.05rem; font-weight: 800;">14</div>
+            <div class="hm-cell h4" style="min-height: 52px; font-size: 1.05rem; font-weight: 800;">23</div>
+            <div class="hm-cell h4" style="min-height: 52px; font-size: 1.05rem; font-weight: 800;">20</div>
+            <div class="hm-cell h4" style="min-height: 52px; font-size: 1.05rem; font-weight: 800;">19</div>
+            <div class="hm-cell h1" style="min-height: 52px; font-size: 1.05rem; font-weight: 800;">9</div>
+            <div class="hm-total" style="border-top: 1px solid var(--p-navy); font-weight: 900; font-size: 1.3rem;">85</div>
+        </div>
+
+        <div class="hm-legend">
+            <div class="scale">
+                <span>Menor actividad</span>
+                <div class="scale-boxes">
+                    <span style="background: #f4f7fa;"></span>
+                    <span style="background: #d9e6ee;"></span>
+                    <span style="background: #a8c7de;"></span>
+                    <span style="background: var(--p-blue);"></span>
+                    <span style="background: var(--p-navy);"></span>
+                </div>
+                <span>Mayor actividad</span>
+            </div>
+            <div class="note-item"><span class="dot"></span> Semana con venta efectiva</div>
+            <div>20 ventas efectivas · 8 PDVs con cierre</div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 02 · PRODUCTOS -->
+    <div class="section-hero">
+        <div class="num">02</div>
+        <h2 class="section-title">Qué mueve <em>la góndola</em></h2>
+    </div>
+    <p class="section-sub">Inventario exhibido, sell-out efectivo, quiebres de stock y pipeline de sugeridos. La conversación real sobre qué SKUs de Ultrex están rotando y cuáles están ocupando espacio sin generar retorno.</p>
+
+    <div class="kpi-row">
+        <div class="kpi-card">
+            <div class="k-ico"><i class="fa-regular fa-square-caret-up"></i></div>
+            <div class="k-lbl">Unidades en góndola</div>
+            <h3>15.007</h3>
+            <div class="k-note">707 líneas de inventario mapeadas en los 16 PDVs.</div>
+        </div>
+        <div class="kpi-card pos">
+            <div class="k-ico"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <div class="k-lbl">Uds. vendidas</div>
+            <h3>115</h3>
+            <div class="k-note">Sell-out efectivo registrado en 8 puntos de venta.</div>
+        </div>
+        <div class="kpi-card neg">
+            <div class="k-ico"><i class="fa-solid fa-arrow-trend-down"></i></div>
+            <div class="k-lbl">SKUs agotados</div>
+            <h3>146</h3>
+            <div class="k-note">33 SKUs distintos en 13 PDVs — La Chinga Niquía sigue siendo el peor PDV con 29.</div>
+        </div>
+        <div class="kpi-card plum">
+            <div class="k-ico"><i class="fa-regular fa-file-lines"></i></div>
+            <div class="k-lbl">Pipeline sugerido</div>
+            <h3>$79.2<small>M</small></h3>
+            <div class="k-note">Pedidos propuestos por la mercaderista a 13 PDVs.</div>
+        </div>
+    </div>
+
+    <div class="chart-split">
+        <div class="chart-box">
+            <div class="cb-head">
+                <h3>Inventario por categoría</h3>
+                <div class="cb-tag">Fig. 04</div>
+            </div>
+            <p class="cb-sub">Detergentes en polvo concentran el 61.8% del stock exhibido, seguido de suavizantes (18.3%) — el motor comercial de Ultrex sigue siendo la línea de polvo.</p>
+            <div class="chart-container"><canvas id="chartInvCat"></canvas></div>
+        </div>
+        <div class="chart-box">
+            <div class="cb-head">
+                <h3>Ventas efectivas por categoría</h3>
+                <div class="cb-tag">Fig. 05</div>
+            </div>
+            <p class="cb-sub">Detergente en polvo lidera con 67% del sell-out, pero el líquido crece de 17.5% a 20.9% de participación frente al corte anterior — diversificación incipiente.</p>
+            <div class="chart-container"><canvas id="chartVentaCat"></canvas></div>
+        </div>
+    </div>
+
+    <div class="chart-box">
+        <div class="cb-head">
+            <h3>Top 10 SKUs por inventario en góndola</h3>
+            <div class="cb-tag">Fig. 06</div>
+        </div>
+        <p class="cb-sub">El sobre-stock de la presentación 500 g se sostiene como el mayor de la ruta — <strong>3.610 unidades (24.1%)</strong> contra 3.394 (22.6%) del 3000 g insignia — aunque la brecha entre ambos se estrechó frente al corte anterior (de 12% a 6.4% de diferencia). El formato insignia empieza a recuperar terreno relativo.</p>
+        <div class="chart-container-tall"><canvas id="chartTopSKU"></canvas></div>
+    </div>
+
+    <div class="table-wrapper">
+        <div class="table-container">
+            <h3>Sell-out por SKU · Semanas 27-31</h3>
+            <p class="tbl-sub">Unidades registradas como venta efectiva en punto de venta.</p>
+            <table class="table-data">
+                <tr><th>SKU</th><th>Categoría</th><th class="num">Uds.</th></tr>
+                <tr><td>Fibrapro 3000 g</td><td><span class="pill accent">Polvo</span></td><td class="num">61</td></tr>
+                <tr><td>Liq. Fibr DP 2 L</td><td><span class="pill accent">Líquido</span></td><td class="num">13</td></tr>
+                <tr><td>Liq. Fibr 4 L</td><td><span class="pill accent">Líquido</span></td><td class="num">11</td></tr>
+                <tr><td>Fibrapro 2000 g</td><td><span class="pill accent">Polvo</span></td><td class="num">7</td></tr>
+                <tr><td>Fibrapro 500 g</td><td><span class="pill accent">Polvo</span></td><td class="num">3</td></tr>
+                <tr><td>Suavi Flo 4 L</td><td><span class="pill accent">Suavizante</span></td><td class="num">3</td></tr>
+                <tr><td>Otros 9 SKUs</td><td>—</td><td class="num">17</td></tr>
+                <tr><td>Total sell-out</td><td>—</td><td class="num">115</td></tr>
+            </table>
+        </div>
+        <div class="table-container">
+            <h3>SKUs agotados por PDV</h3>
+            <p class="tbl-sub">Puntos de venta donde se está perdiendo venta neta por quiebre.</p>
+            <table class="table-data">
+                <tr><th>Punto de venta</th><th>Presentaciones críticas</th><th class="num">Instancias</th></tr>
+                <tr><td>La Chinga Niquia</td><td><span class="pill neg">205 ml · 500 g · 900 g · 3000 g</span></td><td class="num">29</td></tr>
+                <tr><td>Merca Alex</td><td><span class="pill neg">Suavizantes · quitagrasa · limpiavidrios</span></td><td class="num">22</td></tr>
+                <tr><td>Dinastía San Javier</td><td><span class="pill neg">1000 g · 1 L · Multi Bic</span></td><td class="num">17</td></tr>
+                <tr><td>Dinastía Plaza De Flores</td><td><span class="pill neg">900 g · Limpiapisos</span></td><td class="num">17</td></tr>
+                <tr><td>La Bendición</td><td><span class="pill warn">Suavizantes 900 ml · 1.8 L</span></td><td class="num">13</td></tr>
+                <tr><td>La 80 Cabañas</td><td><span class="pill warn">Líquido 4 L (nuevo) · medianas</span></td><td class="num">11</td></tr>
+                <tr><td>Otros 7 PDVs</td><td>—</td><td class="num">37</td></tr>
+                <tr><td>Total agotados</td><td>—</td><td class="num">146</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="chart-box">
+        <div class="cb-head">
+            <h3>Pipeline de sugeridos por punto de venta</h3>
+            <div class="cb-tag">Fig. 07</div>
+        </div>
+        <p class="cb-sub">$79.2 M en pedidos propuestos por la mercaderista. Los ocho PDVs del gráfico concentran el 85% del pipeline — La 80 Cabañas toma la delantera con $13.72 M, seguida de Dinastía Plaza de Flores y Comercializadora La 2000. Mercados y Carnes O.R, el mayor vendedor de la ruta, <strong>sigue sin pipeline gestionado por tercer corte consecutivo</strong>.</p>
+        <div class="chart-container"><canvas id="chartSugPDV"></canvas></div>
+    </div>
+
+    <!-- SECCIÓN 03 · MERCADO -->
+    <div class="section-hero">
+        <div class="num">03</div>
+        <h2 class="section-title">Radar de <em>competencia</em></h2>
+    </div>
+    <p class="section-sub">Qué marcas está viendo el shopper en la góndola, cómo se está moviendo el precio de Ultrex en cada punto de venta y qué presión promocional ejerce la competencia sobre el portafolio propio.</p>
+
+    <div class="kpi-row">
+        <div class="kpi-card">
+            <div class="k-ico"><i class="fa-solid fa-flag"></i></div>
+            <div class="k-lbl">Refs. mapeadas</div>
+            <h3>99</h3>
+            <div class="k-note">Chequeos de competencia levantados en 15 PDVs.</div>
+        </div>
+        <div class="kpi-card pos">
+            <div class="k-ico"><i class="fa-solid fa-crown"></i></div>
+            <div class="k-lbl">Refs. DERSA</div>
+            <h3>27</h3>
+            <div class="k-note">Competidor #1 visible · share cae a 27.3%, retoma la dilución tras la pausa del corte anterior.</div>
+        </div>
+        <div class="kpi-card warn">
+            <div class="k-ico"><i class="fa-solid fa-tag"></i></div>
+            <div class="k-lbl">Precios fuera de rango</div>
+            <h3>22.4<small>%</small></h3>
+            <div class="k-note">30 de 134 chequeos superan la banda PVP referencia.</div>
+        </div>
+        <div class="kpi-card pos">
+            <div class="k-ico"><i class="fa-solid fa-bullhorn"></i></div>
+            <div class="k-lbl">Cobertura POP</div>
+            <h3>56<small>%</small></h3>
+            <div class="k-note">9 de 16 PDVs con material Ultrex activado.</div>
+        </div>
+    </div>
+
+    <div class="brands-list">
+        <div class="cb-head">
+            <h3>Share of shelf · Marcas competidoras detectadas</h3>
+            <div class="cb-tag">Fig. 08</div>
+        </div>
+        <p class="cb-sub">Número de referencias de cada marca detectadas por la mercaderista en góndola durante el corte. Solo se contabilizan marcas registradas en el módulo de chequeo de competencia.</p>
+
+        <div class="brand-row">
+            <div class="brand-name">DERSA<small>Competidor principal · en caída</small></div>
+            <div class="brand-bar"><div class="brand-bar-fill lead" style="width: 100%;"></div></div>
+            <div class="brand-count">27</div>
+            <div class="brand-pct">27.3%</div>
+        </div>
+        <div class="brand-row">
+            <div class="brand-name">3D<small>Fuerte en Bello · Niquía</small></div>
+            <div class="brand-bar"><div class="brand-bar-fill" style="width: 48.1%;"></div></div>
+            <div class="brand-count">13</div>
+            <div class="brand-pct">13.1%</div>
+        </div>
+        <div class="brand-row">
+            <div class="brand-name">AK-1<small>Promo por compra +$25K</small></div>
+            <div class="brand-bar"><div class="brand-bar-fill" style="width: 48.1%;"></div></div>
+            <div class="brand-count">13</div>
+            <div class="brand-pct">13.1%</div>
+        </div>
+        <div class="brand-row">
+            <div class="brand-name">MUA<small>Reto local · promo activa</small></div>
+            <div class="brand-bar"><div class="brand-bar-fill" style="width: 22.2%;"></div></div>
+            <div class="brand-count">6</div>
+            <div class="brand-pct">6.1%</div>
+        </div>
+        <div class="brand-row">
+            <div class="brand-name">Suavitel<small>Suavizantes económicos</small></div>
+            <div class="brand-bar"><div class="brand-bar-fill" style="width: 18.5%;"></div></div>
+            <div class="brand-count">5</div>
+            <div class="brand-pct">5.1%</div>
+        </div>
+        <div class="brand-row">
+            <div class="brand-name">Otras (14 marcas)<small>Arras · Ariel · Castillo · Axion · FAB · Vanish · Aromatel · Deterk · La Joya · Rindes · Eterna · Frozen · Jirafa · Ekono</small></div>
+            <div class="brand-bar"><div class="brand-bar-fill" style="width: 100%; background: var(--p-gray2);"></div></div>
+            <div class="brand-count">35</div>
+            <div class="brand-pct">35.4%</div>
+        </div>
+    </div>
+
+    <div class="chart-box">
+        <div class="cb-head">
+            <h3>Desviación de precio Ultrex vs. PVP sugerido</h3>
+            <div class="cb-tag">Fig. 09</div>
+        </div>
+        <p class="cb-sub">Cada barra representa un chequeo fuera de rango. Valores positivos indican sobreprecio en góndola (riesgo directo sobre rotación); valores negativos indican subprecio (riesgo sobre margen). El SKU insignia 3000 g aparece inflado en 10 PDVs. <strong>Mercados y Carnes O.R</strong> había corregido su precio a $16.990 entre el 06 y el 15 de julio, pero en las visitas del 22 y 27 de julio volvió a registrarse en $21.300 (+25.4%) — el ajuste no se sostuvo. <strong>Maxiofertas Niquía</strong> también empeoró, de +24.8% (03 jul) a +35.4% (27 jul).</p>
+        <div class="chart-container-tall"><canvas id="chartPrecioDrift"></canvas></div>
+    </div>
+
+    <div class="table-wrapper">
+        <div class="table-container">
+            <h3>Muestreo competencia · precio de anaquel</h3>
+            <p class="tbl-sub">Referencias clave levantadas en campo, incluyendo los PDVs de Bello y Niquía.</p>
+            <table class="table-data">
+                <tr><th>Producto</th><th>PDV</th><th class="num">Precio</th></tr>
+                <tr><td>AK-1 Floral 3000 g <span class="pill neg">Promo</span></td><td>La 2000</td><td class="num">$20.990</td></tr>
+                <tr><td>DERSA 5X 4000 g</td><td>La 2000</td><td class="num">$46.800</td></tr>
+                <tr><td>3D Manzana 3000 g</td><td>Mercados y Carnes O.R</td><td class="num">$27.750</td></tr>
+                <tr><td>La Joya Suavizante 1200 ml</td><td>Dinastía San Javier</td><td class="num">$7.900</td></tr>
+                <tr><td>FAB Detergente Líquido Ultra 300 ml</td><td>La Bendición</td><td class="num">$6.600</td></tr>
+                <tr><td>Vanish Oxi Action 450 g</td><td>La 80 Cabañas</td><td class="num">$49.150</td></tr>
+                <tr><td>Axion Líquido 180 ml</td><td>Merca Alex</td><td class="num">$2.450</td></tr>
+            </table>
+        </div>
+        <div class="table-container">
+            <h3>Ultrex fuera de rango · sobreprecio</h3>
+            <p class="tbl-sub">SKUs con desviación positiva vs. PVP referencia PQP. Mercados y Carnes O.R y Maxiofertas Niquía son los dos casos que empeoraron en este corte.</p>
+            <table class="table-data">
+                <tr><th>PDV</th><th>SKU</th><th class="num">Δ vs ref.</th></tr>
+                <tr><td>Comerc. La 2000</td><td>Fibrapro 3000 g</td><td class="num"><span class="pill neg">+55%</span></td></tr>
+                <tr><td>Tropiexpress</td><td>Fibrapro 3000 g</td><td class="num"><span class="pill neg">+48%</span></td></tr>
+                <tr><td>La 80 Cabañas</td><td>Fibrapro 3000 g</td><td class="num"><span class="pill warn">+41%</span></td></tr>
+                <tr><td>Boom la 33 / Dinastía SJ</td><td>Fibrapro 3000 g</td><td class="num"><span class="pill warn">+39%</span></td></tr>
+                <tr><td>Maxiofertas Niquía</td><td>Fibrapro 3000 g <span class="pill neg">↑</span></td><td class="num"><span class="pill warn">+35%</span></td></tr>
+                <tr><td>Mercados y Carnes O.R</td><td>Fibrapro 3000 g <span class="pill neg">Relapso</span></td><td class="num"><span class="pill warn">+25%</span></td></tr>
+                <tr><td>Mercados La Raza</td><td>Fibrapro 3000 g</td><td class="num"><span class="pill warn">+20%</span></td></tr>
+                <tr><td>La Bendición</td><td>Fibrapro 3000 g</td><td class="num"><span class="pill warn">+16%</span></td></tr>
+                <tr><td>Supermercado La 2000 Niquía</td><td>Fibrapro 3000 g <span class="pill accent">Nuevo</span></td><td class="num"><span class="pill warn">+12%</span></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 04 · PDV -->
+    <div class="section-hero">
+        <div class="num">04</div>
+        <h2 class="section-title">Los seis PDV <em>que importan</em></h2>
+    </div>
+    <p class="section-sub">Perfilamiento operativo de los seis puntos de venta que definen la dinámica del corte. El líder con doble alerta, el motor emergente con riesgo propio, la crisis de suministro que se profundiza, el peor quiebre de la ruta, el faltante sin resolver y el desenlace del patrón de churn.</p>
+
+    <div class="pdv-grid">
+        <div class="pdv-card top">
+            <div class="pdv-tag">Líder en ventas · doble alerta</div>
+            <h4>Mercados y Carnes O.R</h4>
+            <div class="pdv-stat"><span class="k">Ventas cerradas</span><span class="v pos">59 uds.</span></div>
+            <div class="pdv-stat"><span class="k">Visitas periodo</span><span class="v">12</span></div>
+            <div class="pdv-stat"><span class="k">Precio SKU insignia</span><span class="v neg">$21.300 · relapso +25.4%</span></div>
+            <div class="pdv-stat"><span class="k">Pipeline sugerido</span><span class="v warn">$0 · sin gestionar</span></div>
+            <div class="pdv-stat"><span class="k">Riesgo</span><span class="v neg">3er corte sin pipeline ejecutado</span></div>
+            <div class="pdv-note">Sigue siendo el PDV que más vende de la ruta — 51.3% del sell-out — pero el precio que se había sostenido en $16.990 entre el 06 y el 15 de julio volvió a subir a $21.300 en las dos últimas visitas. Doble alerta: precio y pipeline en la misma cuenta.</div>
+        </div>
+        <div class="pdv-card top">
+            <div class="pdv-tag">Motor de ventas emergente</div>
+            <h4>La 80 Cabañas</h4>
+            <div class="pdv-stat"><span class="k">Ventas cerradas</span><span class="v pos">35 uds.</span></div>
+            <div class="pdv-stat"><span class="k">Visitas periodo</span><span class="v">13</span></div>
+            <div class="pdv-stat"><span class="k">Pipeline sugerido</span><span class="v pos">$13.72 M · el mayor de la ruta</span></div>
+            <div class="pdv-stat"><span class="k">SKUs agotados</span><span class="v neg">11</span></div>
+            <div class="pdv-stat"><span class="k">Riesgo</span><span class="v neg">Bodega cerrada · nuevo agotado</span></div>
+            <div class="pdv-note">Ya es el segundo motor de ventas de la ruta (30.4% del sell-out) y el de mayor pipeline. Pero también el de mayor fricción operativa: bodega cerrada bloqueó inventario en dos visitas seguidas (10-11 jul), y la observación del 25 de julio advierte explícitamente un nuevo agotado inminente en el detergente líquido 4 L.</div>
+        </div>
+        <div class="pdv-card warn">
+            <div class="pdv-tag">Crisis de suministro que se profundiza</div>
+            <h4>Cadena Dinastía</h4>
+            <div class="pdv-stat"><span class="k">Ventas cerradas</span><span class="v neg">2 uds.</span></div>
+            <div class="pdv-stat"><span class="k">Pipeline combinado</span><span class="v">$24.0 M</span></div>
+            <div class="pdv-stat"><span class="k">SKUs agotados</span><span class="v neg">42</span></div>
+            <div class="pdv-stat"><span class="k">Hallazgo</span><span class="v warn">Almacén propio sin mercancía</span></div>
+            <div class="pdv-stat"><span class="k">PDVs</span><span class="v">San Javier · Plaza de Flores · Castilla</span></div>
+            <div class="pdv-note">El 16 de julio, San Javier y Plaza de Flores volvieron a reportar el mismo día "almacén sin mercancía" / "desabastecido". Con Castilla sumado al radar, la cadena ya acumula 42 SKUs agotados y $24.0 M en pipeline bloqueado — el problema de abastecimiento del cliente no ha cedido.</div>
+        </div>
+        <div class="pdv-card warn">
+            <div class="pdv-tag">Peor quiebre de la ruta</div>
+            <h4>La Chinga Niquía</h4>
+            <div class="pdv-stat"><span class="k">Ventas cerradas</span><span class="v">3 uds.</span></div>
+            <div class="pdv-stat"><span class="k">SKUs agotados</span><span class="v neg">29 instancias</span></div>
+            <div class="pdv-stat"><span class="k">Material POP</span><span class="v neg">No instalado</span></div>
+            <div class="pdv-stat"><span class="k">Pipeline sugerido</span><span class="v">$4.31 M</span></div>
+            <div class="pdv-stat"><span class="k">Estado</span><span class="v neg">Sin visita en toda la semana 31</span></div>
+            <div class="pdv-note">Con 29 instancias de agotado en solo 3 visitas del corte, sigue siendo el peor punto de la ruta. No recibió visita en la semana 31 (última el 24 de julio), aunque ya hay una próxima visita agendada para el 29 de julio, justo al cierre de este corte.</div>
+        </div>
+        <div class="pdv-card">
+            <div class="pdv-tag">Faltante sin resolver · 18 días</div>
+            <h4>Comerc. La 2000</h4>
+            <div class="pdv-stat"><span class="k">Ventas cerradas</span><span class="v">4 uds.</span></div>
+            <div class="pdv-stat"><span class="k">Visitas periodo</span><span class="v">8</span></div>
+            <div class="pdv-stat"><span class="k">Pipeline sugerido</span><span class="v">$10.54 M</span></div>
+            <div class="pdv-stat"><span class="k">Alerta precio</span><span class="v neg">+55% (sin re-chequear)</span></div>
+            <div class="pdv-stat"><span class="k">Riesgo</span><span class="v neg">Control de inventario</span></div>
+            <div class="pdv-note">El conteo físico del 10 de julio reveló faltantes de 1 ud. de 3000 g, 9 de 900 g y 6 de 500 g frente al sistema. Dieciocho días después (28 de julio) y con seis visitas de por medio, sigue sin registro de seguimiento explícito de control interno.</div>
+        </div>
+        <div class="pdv-card neg">
+            <div class="pdv-tag">Dos bajas confirmadas · una retención que avanza</div>
+            <h4>Boom la 33 · Boom la América · La 2000 Niquía</h4>
+            <div class="pdv-stat"><span class="k">Estado</span><span class="v neg">2 bajas confirmadas · 1 en retención</span></div>
+            <div class="pdv-stat"><span class="k">Confirmado por</span><span class="v">Compradora Paola · Coord. Milena · Admin. León</span></div>
+            <div class="pdv-stat"><span class="k">Días sin visita</span><span class="v neg">26 (Boom la 33 y Boom la América)</span></div>
+            <div class="pdv-stat"><span class="k">Prioridad</span><span class="v warn">Decisión administrativa, no más seguimiento</span></div>
+            <div class="pdv-note">El mismo 02 de julio, Boom la 33 (cambio de distribuidor + baja rotación, según la compradora Paola Vázquez) y Boom la América (suspensión a nivel empresa, según la coordinadora Milena) confirmaron el fin de la relación. 26 días después siguen sin visita ni cierre formal. En contraste, Supermercado La 2000 Niquía — que estuvo en el mismo riesgo — ya acumula 3 visitas de retención y registró su primer pipeline ($101.940).</div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 05 · COMENTARIOS DE CAMPO -->
+    <div class="section-hero">
+        <div class="num">05</div>
+        <h2 class="section-title">Comentarios <em>de campo</em></h2>
+    </div>
+    <p class="section-sub">Bitácora cualitativa de la mercaderista Natalia Rueda durante las semanas 27 a 31. Observaciones ampliadas, contexto de pasillo y señales tempranas que los números por sí solos no alcanzan a explicar. Cada entrada es una pieza del rompecabezas comercial.</p>
+
+    <div class="comentarios-grid">
+        <div class="comentario-card critico">
+            <div class="com-fecha">Jueves 16 de Julio</div>
+            <h4 class="com-pdv">Cadena Dinastía (San Javier + Plaza de Flores)</h4>
+            <p class="com-body">El hallazgo más persistente del corte, otra vez confirmado. El mismo día, ambos puntos de la cadena Dinastía reportan lo mismo: <strong>"almacén sin mercancía"</strong> en Plaza de Flores y <strong>"almacén desabastecido"</strong> en San Javier. Con Dinastía Castilla sumado al radar, la cadena completa ya acumula <strong>42 SKUs agotados</strong> y $24.0 M en pipeline sin convertir: el problema sigue siendo del almacén central del cliente, no de ejecución en el punto de venta.</p>
+            <div class="com-footer"><span>Natalia Rueda</span><span class="com-tag urgente">Desabastecimiento del cliente</span></div>
+        </div>
+
+        <div class="comentario-card critico">
+            <div class="com-fecha">Jueves 02 de Julio</div>
+            <h4 class="com-pdv">Boom la 33 y Boom la América</h4>
+            <p class="com-body">El mismo día se pierden dos cuentas, por dos motivos distintos. En Boom la 33, la compradora Paola Vázquez confirma que <strong>el producto no se comercializará más</strong>: cambio de distribuidor (antes Tropicana) y baja rotación. En Boom la América, la coordinadora Milena confirma que la suspensión es <strong>a nivel empresa</strong>, no del punto de venta. Veintiséis días después, al cierre de este corte, <strong>ninguna de las dos tiene visita ni cierre formal registrado</strong> — ya no son casos "sin resolver", son bajas confirmadas que requieren una decisión administrativa.</p>
+            <div class="com-footer"><span>Natalia Rueda</span><span class="com-tag urgente">2 bajas confirmadas · 26 días</span></div>
+        </div>
+
+        <div class="comentario-card alerta">
+            <div class="com-fecha">Miércoles 22 y Lunes 27 de Julio</div>
+            <h4 class="com-pdv">Mercados y Carnes O.R</h4>
+            <p class="com-body">La buena noticia del corte anterior se revierte. El precio del Fibrapro 3000 g, que se había sostenido en $16.990 desde el 06 de julio, <strong>volvió a registrarse en $21.300 (+25.4%) en las dos últimas visitas</strong>. El PDV sigue siendo el mayor vendedor de la ruta (59 uds. acumuladas, sin nuevas ventas desde el 18 de julio), pero acumula ya <strong>tercer corte consecutivo sin un peso de pipeline sugerido</strong>.</p>
+            <div class="com-footer"><span>Natalia Rueda</span><span class="com-tag riesgo">Relapso de precio · $0 pipeline</span></div>
+        </div>
+
+        <div class="comentario-card">
+            <div class="com-fecha">Viernes 25 de Julio</div>
+            <h4 class="com-pdv">La 80 Cabañas</h4>
+            <p class="com-body">Visita que mezcla ejecución positiva con alerta preventiva. Se realiza <strong>entrega de obsequios con su respectiva factura</strong> — la primera activación documentada del nuevo módulo Evacuador, junto a La Chinca Bello el mismo día. Pero la propia observación advierte: <strong>"este almacén está bajo de mercancía... nuevo agotado el detergente líquido 4L"</strong> — una alerta temprana que da tiempo de reaccionar antes de que el quiebre se materialice.</p>
+            <div class="com-footer"><span>Natalia Rueda</span><span class="com-tag accion">Evacuador activo · alerta preventiva</span></div>
+        </div>
+
+        <div class="comentario-card alerta">
+            <div class="com-fecha">Viernes 10 de Julio</div>
+            <h4 class="com-pdv">Comercializadora La 2000</h4>
+            <p class="com-body">Inventario físico programado que arroja un hallazgo delicado. Al comparar el conteo en anaquel y bodega contra el sistema, <strong>falta 1 unidad de 3000 g, 9 de 900 g y 6 de 500 g.</strong> No hay evidencia de venta que explique la diferencia. Dieciocho días y seis visitas después (14, 15, 18, 22, 27 y 28 de julio), sigue sin registro de seguimiento explícito de control interno.</p>
+            <div class="com-footer"><span>Natalia Rueda</span><span class="com-tag riesgo">Faltante sin explicar · 18 días</span></div>
+        </div>
+
+        <div class="comentario-card critico">
+            <div class="com-fecha">Semanas 28 a 30 · Julio</div>
+            <h4 class="com-pdv">La Chinga Niquía</h4>
+            <p class="com-body">En las tres visitas registradas al PDV durante el corte, se acumularon <strong>29 instancias de agotado en 12 SKUs distintos</strong> — el peor indicador de quiebre de toda la ruta. No hubo visita en la semana 31, pero la observación del 24 de julio ya agenda la próxima para el 29, justo al cierre de este corte — la mercaderista mantiene el foco pese a la ventana de acceso limitada reportada en cortes anteriores.</p>
+            <div class="com-footer"><span>Natalia Rueda</span><span class="com-tag urgente">29 instancias agotado</span></div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 06 · VOZ PDV -->
+    <div class="section-hero">
+        <div class="num">06</div>
+        <h2 class="section-title">Voz del <em>punto de venta</em></h2>
+    </div>
+    <p class="section-sub">Fragmentos textuales capturados por la mercaderista en campo. Contexto no cuantificable pero decisivo — son las alertas tempranas de lo que pasará en la ruta durante las próximas semanas.</p>
+
+    <div class="quotes-grid">
+        <div class="quote-card neg">
+            <div class="qm">"</div>
+            <p>Almacén sin mercancía. Se realiza organización de góndolas y frenteo, pero no hay producto para reponer.</p>
+            <div class="q-meta"><span>Dinastía Plaza de Flores</span><span>16 Jul</span></div>
+        </div>
+        <div class="quote-card neg">
+            <div class="qm">"</div>
+            <p>Almacén desabastecido. Se realiza frenteo y organización de góndolas con lo poco disponible.</p>
+            <div class="q-meta"><span>Dinastía San Javier</span><span>16 Jul</span></div>
+        </div>
+        <div class="quote-card neg">
+            <div class="qm">"</div>
+            <p>El producto no se comercializará más: cambio de distribuidor y baja rotación — indica la Compradora Paola Vázquez.</p>
+            <div class="q-meta"><span>Boom la 33</span><span>02 Jul</span></div>
+        </div>
+        <div class="quote-card warn">
+            <div class="qm">"</div>
+            <p>Se evidencia que hay productos que no ingresan desde el 2025 — indica la Jefe Nataly Londoño.</p>
+            <div class="q-meta"><span>Dinastía Plaza de Flores</span><span>09 Jul</span></div>
+        </div>
+        <div class="quote-card warn">
+            <div class="qm">"</div>
+            <p>Almacén indica que le está llegando mercancía cada 8 días aproximadamente.</p>
+            <div class="q-meta"><span>Tropiexpress</span><span>09 Jul</span></div>
+        </div>
+        <div class="quote-card warn">
+            <div class="qm">"</div>
+            <p>Este almacén está bajo de mercancía... un nuevo agotado, el detergente líquido 4L.</p>
+            <div class="q-meta"><span>La 80 Cabañas</span><span>25 Jul</span></div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 07 · INSIGHTS -->
+    <div class="section-hero">
+        <div class="num">07</div>
+        <h2 class="section-title">Seis hallazgos <em>para el comité</em></h2>
+    </div>
+    <p class="section-sub">Los seis puntos de decisión que este reporte pone sobre la mesa del comité comercial PQP. Cada uno con evidencia numérica y foco accionable.</p>
+
+    <div class="insight-grid">
+        <div class="insight-card pos">
+            <div class="in-ico"><i class="fa-solid fa-arrow-up"></i></div>
+            <div>
+                <div class="in-tag">Hallazgo 01 · Oportunidad</div>
+                <h5>La 80 Cabañas se consolida como el segundo motor de ventas</h5>
+                <p><strong>35 unidades — 30.4% del sell-out del corte</strong>, y el mayor pipeline de la ruta ($13.72 M). Ya no es solo el PDV más visitado: está empezando a rivalizar con Mercados y Carnes O.R como generador de ingreso.</p>
+            </div>
+        </div>
+        <div class="insight-card plum">
+            <div class="in-ico"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div>
+                <div class="in-tag">Hallazgo 02 · Riesgo doble</div>
+                <h5>El líder de la ruta acumula dos alertas simultáneas</h5>
+                <p>Mercados y Carnes O.R sigue en <strong>$0 de pipeline por tercer corte consecutivo</strong>, y el precio que se había estabilizado en $16.990 <strong>volvió a dispararse a $21.300 (+25.4%)</strong> en las dos últimas visitas. La recomendación de dos cortes atrás sigue sin ejecutarse.</p>
+            </div>
+        </div>
+        <div class="insight-card neg">
+            <div class="in-ico"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <div>
+                <div class="in-tag">Hallazgo 03 · Crítico</div>
+                <h5>Los quiebres de stock crecieron 57% en el corte</h5>
+                <p><strong>146 quiebres de stock</strong> (33 SKUs) en 13 PDVs, frente a 93 en el corte anterior. Merca Alex casi duplicó su indicador (13 → 22 instancias) — la segunda peor tendencia, después de La Chinga Niquía (29).</p>
+            </div>
+        </div>
+        <div class="insight-card">
+            <div class="in-ico"><i class="fa-solid fa-crown"></i></div>
+            <div>
+                <div class="in-tag">Hallazgo 04 · Competencia</div>
+                <h5>DERSA retoma la caída tras la pausa del corte anterior</h5>
+                <p>Con <strong>27 referencias</strong> DERSA sigue siendo el competidor dominante, pero su share <strong>cae a 27.3%</strong> (45% → 36% → 33% → 35% → 27.3%). 3D y AK-1 empatan como retadores directos, con 13.1% cada uno.</p>
+            </div>
+        </div>
+        <div class="insight-card pos">
+            <div class="in-ico"><i class="fa-solid fa-hand-holding"></i></div>
+            <div>
+                <div class="in-tag">Hallazgo 05 · Confirmación</div>
+                <h5>El protocolo de retención de canal ya tiene evidencia sostenida</h5>
+                <p>Supermercado La 2000 Niquía acumula <strong>tres visitas de retención</strong> desde la amenaza de baja (17 y 24 de julio) y registró su <strong>primer pipeline ($101.940)</strong>. En contraste, Boom la 33 y Boom la América confirmaron formalmente su baja el mismo día y llevan 26 días sin visita ni cierre.</p>
+            </div>
+        </div>
+        <div class="insight-card warn">
+            <div class="in-ico"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div>
+                <div class="in-tag">Hallazgo 06 · Calidad de datos</div>
+                <h5>El error de captura del día 17 se repite por segundo corte</h5>
+                <p>Por segunda vez consecutiva, una visita del día 17 quedó mal etiquetada y solo el cruce de coordenadas GPS lo detectó. Es un patrón, no un caso aislado — amerita mejorar la captura del punto de venta en la app (autocompletado o sugerencia por GPS) antes de que se repita un tercer mes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- STRATEGY -->
+    <div class="strategy-box">
+        <div class="kick">Plan táctico · 07 · Estrategia</div>
+        <h3>Seis frentes para las próximas dos semanas</h3>
+        <p class="sub">Hoja de ruta operativa. Cada frente lleva responsable implícito, ventana de ejecución y objetivo medible sobre sell-out del corte.</p>
+
+        <div class="strat-grid">
+            <div class="strat-item">
+                <h6><span class="st-ico"><i class="fa-solid fa-bullhorn"></i></span>Doble alerta en el líder</h6>
+                <p>Mercados y Carnes O.R sigue sin pipeline (3er corte) y el precio relapsó a +25.4%. Escalar a supervisión directa hasta gestionar el primer sugerido y restablecer el gobierno de precio en $16.990.</p>
+            </div>
+            <div class="strat-item">
+                <h6><span class="st-ico"><i class="fa-solid fa-file-signature"></i></span>Cerrar formalmente el churn confirmado</h6>
+                <p>Boom la 33 y Boom la América ya confirmaron su baja por boca de sus propios compradores. Se necesita una decisión administrativa — reactivación final o retiro de ruta — no más visitas de seguimiento indefinidas.</p>
+            </div>
+            <div class="strat-item">
+                <h6><span class="st-ico"><i class="fa-solid fa-boxes-packing"></i></span>Escalar la crisis de suministro Dinastía</h6>
+                <p>42 SKUs agotados y $24.0 M en pipeline bloqueado en 3 PDVs de la cadena. Requiere gestión comercial directa con el proveedor del cliente, no más visitas de reposición.</p>
+            </div>
+            <div class="strat-item">
+                <h6><span class="st-ico"><i class="fa-solid fa-truck-fast"></i></span>Choque de reposición</h6>
+                <p>Despacho urgente a La Chinga Niquía (29 instancias, la peor de la ruta) y Merca Alex (22, casi duplicó su indicador). Aprovechar la visita ya agendada del 29 de julio a La Chinga Niquía.</p>
+            </div>
+            <div class="strat-item">
+                <h6><span class="st-ico"><i class="fa-solid fa-file-invoice"></i></span>Cierre de pipeline</h6>
+                <p>Convertir los $79.2 M de sugeridos en pedido firme. Foco en los tres mayores: La 80 Cabañas ($13.72 M), Dinastía Plaza de Flores ($10.67 M) y Comercializadora La 2000 ($10.54 M). Meta: 60% de cierre en 15 días.</p>
+            </div>
+            <div class="strat-item">
+                <h6><span class="st-ico"><i class="fa-solid fa-magnifying-glass"></i></span>Gobierno de datos y control interno</h6>
+                <p>Formalizar el checklist de shrinkage para Comercializadora La 2000 (18 días sin seguimiento) y ajustar la captura de PDV en la app para evitar el error recurrente del día 17.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 08 · RECOMENDACIONES -->
+    <div class="section-hero">
+        <div class="num">08</div>
+        <h2 class="section-title">Recomendaciones <em>priorizadas</em></h2>
+    </div>
+    <p class="section-sub">Seis acciones accionables ordenadas por impacto sobre sell-out del corte y por urgencia de ejecución. Cada una con métrica objetivo y ventana operativa clara.</p>
+
+    <div class="reco urgent">
+        <div class="r-num">01</div>
+        <div>
+            <div class="r-cat">Urgente · 5 días</div>
+            <h4>Restablecer el gobierno de precio y abrir pipeline en Mercados y Carnes O.R</h4>
+            <p>El PDV que más vende de toda la ruta (59 uds., 51.3% del sell-out) acumula ahora <strong>dos alertas simultáneas</strong>: precio relapsado a +25.4% tras haberse corregido, y <strong>$0 de pipeline por tercer corte consecutivo</strong>. Escalar a supervisión directa esta semana.</p>
+        </div>
+        <div class="r-side">
+            <div class="r-metric"><div class="rm-lbl">Precio actual</div><div class="rm-val">$21.300 (+25.4%)</div></div>
+            <div class="r-metric"><div class="rm-lbl">Pipeline actual</div><div class="rm-val">$0</div></div>
+            <div class="r-metric"><div class="rm-lbl">Cortes sin ejecutar</div><div class="rm-val">3</div></div>
+        </div>
+    </div>
+
+    <div class="reco urgent">
+        <div class="r-num">02</div>
+        <div>
+            <div class="r-cat">Urgente · 7 días</div>
+            <h4>Decidir formalmente el cierre de Boom la 33 y Boom la América</h4>
+            <p>Ambas cuentas confirmaron su baja el mismo día (02 jul) por boca de sus propios compradores — cambio de distribuidor en un caso, suspensión a nivel empresa en el otro. Con <strong>26 días sin visita</strong>, ya no ameritan seguimiento operativo sino una <strong>decisión administrativa</strong>: intento final de reactivación o retiro formal de la ruta.</p>
+        </div>
+        <div class="r-side">
+            <div class="r-metric"><div class="rm-lbl">Días sin visita</div><div class="rm-val">26</div></div>
+            <div class="r-metric"><div class="rm-lbl">Confirmado por</div><div class="rm-val">Compradora · Coordinadora</div></div>
+            <div class="r-metric"><div class="rm-lbl">Interlocutor</div><div class="rm-val">Gerencia comercial</div></div>
+        </div>
+    </div>
+
+    <div class="reco high">
+        <div class="r-num">03</div>
+        <div>
+            <div class="r-cat">Alta · 5 días</div>
+            <h4>Escalar la crisis de suministro de la cadena Dinastía</h4>
+            <p>San Javier y Plaza de Flores volvieron a reportar el mismo día (16 jul) <strong>"almacén sin mercancía" / "desabastecido"</strong>. Con Castilla sumado, la cadena acumula <strong>42 SKUs agotados</strong> y $24.0 M en pipeline sin convertir — requiere gestión comercial con el proveedor del cliente, no más visitas de reposición.</p>
+        </div>
+        <div class="r-side">
+            <div class="r-metric"><div class="rm-lbl">SKUs agotados</div><div class="rm-val">42</div></div>
+            <div class="r-metric"><div class="rm-lbl">Pipeline bloqueado</div><div class="rm-val">$24.0 M</div></div>
+            <div class="r-metric"><div class="rm-lbl">Interlocutor</div><div class="rm-val">Proveedor del cliente</div></div>
+        </div>
+    </div>
+
+    <div class="reco high">
+        <div class="r-num">04</div>
+        <div>
+            <div class="r-cat">Alta · 5 días</div>
+            <h4>Choque de reposición en La Chinga Niquía y Merca Alex</h4>
+            <p>La Chinga Niquía acumula <strong>29 instancias de agotado</strong> — la peor de la ruta — y Merca Alex casi duplicó su indicador (13 → 22). Aprovechar la visita ya agendada del 29 de julio a La Chinga Niquía para un despacho de choque en ambos puntos.</p>
+        </div>
+        <div class="r-side">
+            <div class="r-metric"><div class="rm-lbl">La Chinga Niquía</div><div class="rm-val">29 instancias</div></div>
+            <div class="r-metric"><div class="rm-lbl">Merca Alex</div><div class="rm-val">22 (+69%)</div></div>
+            <div class="r-metric"><div class="rm-lbl">Próxima visita</div><div class="rm-val">29 Jul</div></div>
+        </div>
+    </div>
+
+    <div class="reco mid">
+        <div class="r-num">05</div>
+        <div>
+            <div class="r-cat">Media · 15 días</div>
+            <h4>Cerrar el pipeline sugerido del corte</h4>
+            <p>Convertir los $79.2 M en sugeridos en pedido firme. Priorizar los tres PDVs con mayor propuesta — La 80 Cabañas ($13.72 M), Dinastía Plaza de Flores ($10.67 M) y Comercializadora La 2000 ($10.54 M). Meta cierre: 60% del pipeline en 15 días — equivalente a <strong>$47.5 M en sell-in firme</strong>.</p>
+        </div>
+        <div class="r-side">
+            <div class="r-metric"><div class="rm-lbl">Pipeline vigente</div><div class="rm-val">$79.2 M</div></div>
+            <div class="r-metric"><div class="rm-lbl">Meta cierre</div><div class="rm-val">60%</div></div>
+            <div class="r-metric"><div class="rm-lbl">Sell-in objetivo</div><div class="rm-val">$47.5 M</div></div>
+        </div>
+    </div>
+
+    <div class="reco low">
+        <div class="r-num">06</div>
+        <div>
+            <div class="r-cat">Ejecutiva · 30 días</div>
+            <h4>Formalizar el control de inventario y la captura de datos en campo</h4>
+            <p>El faltante físico de Comercializadora La 2000 (detectado el 10 de julio) sigue sin seguimiento documentado 18 días después. En paralelo, el error de PDV del día 17 ya se repitió por segundo corte consecutivo. Establecer un checklist obligatorio de shrinkage y ajustar la app (autocompletado o sugerencia de PDV por GPS) para blindar ambos frentes.</p>
+        </div>
+        <div class="r-side">
+            <div class="r-metric"><div class="rm-lbl">Interlocutor</div><div class="rm-val">Gerencia + Control</div></div>
+            <div class="r-metric"><div class="rm-lbl">Días sin seguimiento</div><div class="rm-val">18</div></div>
+            <div class="r-metric"><div class="rm-lbl">Ventana</div><div class="rm-val">30 días</div></div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="foot">
+    <div class="foot-in">
+        <div class="foot-top">
+            <div>
+                <div class="foot-brand">PQP<span class="accent">·</span>Intelligence</div>
+                <div class="foot-brand-sub">Ruta Mercaderismo · Portafolio Ultrex</div>
+            </div>
+            <div class="foot-col">
+                <h6>Cobertura</h6>
+                <p>Canal tradicional Medellín, Bello y Niquía.</p>
+                <p>16 puntos de venta activos.</p>
+                <p>10 categorías de portafolio.</p>
+            </div>
+            <div class="foot-col">
+                <h6>Metodología</h6>
+                <p>Captura en campo con módulos digitales por SKU, PDV y jornada.</p>
+                <p>Consolidación mensual y priorización comercial.</p>
+            </div>
+            <div class="foot-col">
+                <h6>Emisión</h6>
+                <p>Volumen 05 · Semanas 27-31.</p>
+                <p>28 de julio de 2026.</p>
+                <p>Documento interno · PQP.</p>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <span>PQP · Todos los derechos reservados</span>
+            <span>85 visitas · 16 PDVs · 10 categorías</span>
+            <span>Próxima emisión · Semana 32</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+Chart.register(ChartDataLabels);
+const NAVY = '#0b2545',
+    DEEP = '#13315c',
+    BLUE = '#1d4e89',
+    SKY = '#2e86ab',
+    AQUA = '#52b6c9',
+    MINT = '#7ec8b1',
+    FRESH = '#a8dadc',
+    SLATE = '#64748b',
+    SLATE2 = '#94a3b8',
+    POS = '#0e7a5f',
+    WARN = '#a86a1a',
+    NEG = '#a12b2b',
+    GOLD = '#a37b3a';
+
+const font = { family: 'Plus Jakarta Sans', weight: '600', size: 11 };
+const axisGrid = { grid: { color: '#eef2f6', drawTicks: false }, ticks: { color: SLATE, font, padding: 8 }, border: { display: false } };
+const axisPlain = { grid: { display: false, drawTicks: false }, ticks: { color: SLATE, font, padding: 8 }, border: { display: false } };
+
+// 1 · Cadencia
+new Chart(document.getElementById('chartCadencia'), {
+    type: 'bar',
+    data: {
+        labels: ['Mié 01', 'Jue 02', 'Vie 03', 'Sáb 04', 'Lun 06', 'Mar 07', 'Mié 08', 'Jue 09', 'Vie 10', 'Sáb 11', 'Mar 14', 'Mié 15', 'Jue 16', 'Vie 17', 'Sáb 18', 'Mar 21', 'Mié 22', 'Jue 23', 'Vie 24', 'Sáb 25', 'Lun 27', 'Mar 28'],
+        datasets: [{ data: [3, 5, 4, 2, 3, 5, 4, 4, 5, 2, 4, 5, 4, 4, 3, 4, 5, 3, 5, 2, 5, 4], backgroundColor: [AQUA, NAVY, BLUE, SKY, AQUA, NAVY, BLUE, SKY, BLUE, SKY, DEEP, NAVY, DEEP, BLUE, SKY, NAVY, AQUA, BLUE, DEEP, SKY, NAVY, BLUE], borderRadius: 3,
+            barPercentage: 0.6, categoryPercentage: 0.8 }]
+    },
+    options: {
+        maintainAspectRatio: false, responsive: true,
+        plugins: { legend: { display: false }, datalabels: { color: 'white', font: { family: 'Plus Jakarta Sans',
+                    weight: '800', size: 13 }, anchor: 'center', align: 'center' } },
+        scales: { y: { ...axisGrid, beginAtZero: true, ticks: { ...axisGrid.ticks, stepSize: 1 } }, x: axisPlain }
+    }
+});
+
+// 2 · Estado
+new Chart(document.getElementById('chartEstado'), {
+    type: 'doughnut',
+    data: {
+        labels: ['Venta cerrada', 'No venta', 'Visita gestión'],
+        datasets: [{ data: [20, 15, 50], backgroundColor: [POS, WARN, BLUE], borderColor: 'white', borderWidth: 3 }]
+    },
+    options: {
+        maintainAspectRatio: false, responsive: true, cutout: '66%',
+        plugins: {
+            legend: { position: 'bottom', labels: { font: { family: 'Plus Jakarta Sans', weight: '600', size: 11 },
+                    padding: 14, boxWidth: 10, boxHeight: 10, color: SLATE } },
+            datalabels: { color: 'white', font: { family: 'Plus Jakarta Sans', weight: '800', size: 14 },
+                formatter: (v) => v }
+        }
+    }
+});
+
+// 4 · Inv categoría
+new Chart(document.getElementById('chartInvCat'), {
+    type: 'doughnut',
+    data: {
+        labels: ['Detergentes en polvo', 'Suavizantes', 'Detergentes líquido', 'Lavalozas', 'Abrasivo', 'Otros'],
+        datasets: [{ data: [9281, 2752, 1674, 389, 224, 687], backgroundColor: [NAVY, MINT, BLUE, AQUA, GOLD, SLATE2],
+            borderColor: 'white', borderWidth: 3 }]
+    },
+    options: {
+        maintainAspectRatio: false, responsive: true, cutout: '60%',
+        plugins: {
+            legend: { position: 'bottom', labels: { font: { family: 'Plus Jakarta Sans', weight: '600', size: 10 },
+                    padding: 10, boxWidth: 10, boxHeight: 10, color: SLATE } },
+            datalabels: {
+                color: 'white',
+                font: { family: 'Plus Jakarta Sans', weight: '800', size: 11 },
+                formatter: (v, ctx) => { const t = ctx.chart.data.datasets[0].data.reduce((a, b) => a + b, 0); const p = (
+                        v / t * 100).toFixed(0); return p >= 5 ? p + '%' : ''; }
+            }
+        }
+    }
+});
+
+// 5 · Ventas categoría
+new Chart(document.getElementById('chartVentaCat'), {
+    type: 'bar',
+    data: {
+        labels: ['Detergentes en polvo', 'Detergentes líquido', 'Suavizantes', 'Lavalozas', 'Quitamanchas', 'Otros'],
+        datasets: [{ data: [77, 24, 6, 4, 2, 2], backgroundColor: [NAVY, BLUE, SKY, AQUA, MINT, GOLD], borderRadius: 3, barPercentage: 0.5,
+            categoryPercentage: 0.75 }]
+    },
+    options: {
+        maintainAspectRatio: false, responsive: true,
+        plugins: { legend: { display: false }, datalabels: { color: 'white', font: { family: 'Plus Jakarta Sans',
+                    weight: '800', size: 14 }, anchor: 'center', align: 'center', formatter: (v) => v > 0 ? v : '' } },
+        scales: { y: { ...axisGrid, beginAtZero: true }, x: axisPlain }
+    }
+});
+
+// 6 · Top SKU
+new Chart(document.getElementById('chartTopSKU'), {
+    type: 'bar',
+    data: {
+        labels: ['Det Fibrapro 500 g', 'Det Fibrapro 3000 g', 'Det Fibrapro 900 g', 'Suavi Flo Fib 4 L',
+            'Det Liq Flo Fibr DP 2 L', 'Det Fib Extr 3000 g', 'Det Liq Flo Fibr 4 L', 'Suavi Flo Fib DP 1.8 L',
+            'Suavi Flo Fib DP 425 ml', 'Det Liq Flo DP 1 L'
+        ],
+        datasets: [{
+            data: [3610, 3394, 1064, 684, 562, 514, 442, 414, 321, 299],
+            backgroundColor: (ctx) => { const v = ctx.dataset.data[ctx.dataIndex]; if (v > 2000) return NAVY;
+                if (v > 800) return BLUE; if (v > 400) return SKY; return AQUA; },
+            borderRadius: 3,
+            barPercentage: 0.72
+        }]
+    },
+    options: {
+        indexAxis: 'y', maintainAspectRatio: false, responsive: true,
+        plugins: { legend: { display: false }, datalabels: { color: NAVY, font: { family: 'Plus Jakarta Sans',
+                    weight: '700', size: 11 }, anchor: 'end', align: 'end', offset: 8 } },
+        scales: { x: { ...axisGrid, beginAtZero: true }, y: axisPlain }
+    }
+});
+
+// 7 · Sugeridos
+new Chart(document.getElementById('chartSugPDV'), {
+    type: 'bar',
+    data: {
+        labels: ['La 80 Cabañas', 'Dinastía Plaza Flores', 'Comerc. La 2000', 'Dinastía SJ', 'Merca Alex', 'Maxiofertas Niquía', 'La Bendición', 'La Chinga Niquia'],
+        datasets: [{ data: [13716620, 10671868, 10536580, 9262824, 6548696, 6416930, 6036400, 4307196], backgroundColor: [NAVY, DEEP, BLUE, SKY,
+                AQUA, MINT, GOLD, SLATE2
+            ], borderRadius: 3, barPercentage: 0.6 }]
+    },
+    options: {
+        maintainAspectRatio: false, responsive: true,
+        plugins: { legend: { display: false }, datalabels: { color: 'white', font: { family: 'Plus Jakarta Sans',
+                    weight: '800', size: 12 }, anchor: 'center', align: 'center', formatter: (v) => '$' + (v /
+                    1000000).toFixed(2) + ' M' } },
+        scales: { y: { ...axisGrid, beginAtZero: true, ticks: { ...axisGrid.ticks, callback: (v) => '$' + (v / 1000000)
+                    .toFixed(0) + ' M' } }, x: axisPlain }
+    }
+});
+
+// 9 · Precio drift
+new Chart(document.getElementById('chartPrecioDrift'), {
+    type: 'bar',
+    data: {
+        labels: ['Comerc. La 2000 · 3000 g', 'Mercados y Carnes O.R · 3000 g (01 Jul)', 'Tropiexpress · 3000 g',
+            'La 80 Cab. · 3000 g', 'Boom la 33 · 3000 g', 'Dinastía SJ · 3000 g', 'Maxiofertas · 3000 g (27 Jul)',
+            'Mercados y Carnes O.R · 3000 g (22 Jul)', 'Mercados y Carnes O.R · 3000 g (27 Jul)', 'Maxiofertas · 3000 g (03 Jul)',
+            'Mercados La Raza · 3000 g (14 Jul)', 'Mercados La Raza · 3000 g (28 Jul)', 'La Bendición · 3000 g',
+            'La Bendición · Liq DP 2 L', 'La Bendición · Suavi DP 1.8 L', 'La 2000 Niquía · 3000 g',
+            'Tropiexpress · Suavi Flo 4 L', 'Tropiexpress · Suavi Man Fib 4 L', 'Tropiexpress · Suavi Flo DP 900 ml',
+            'Tropiexpress · Suavi Man DP 900 ml', 'Boom la 33 · Liq DP 2 L', 'Tropiexpress · 5000 g',
+            'Dinastía Castilla · Liq Fibra DP 400 ml', 'La Chinga Niquia · Suavi DP 425 ml',
+            'Merca Alex · Limpiap Lav Odor DP 500 ml', 'Tropiexpress · Suavi DP 425 ml', 'Tropiexpress · Quitam Fibr 300 g',
+            'Merca Alex · Suavi Man Fib 425 ml', 'Mercados y Carnes O.R · 3000 g (03 Jul)', 'Mercados y Carnes O.R · 3000 g (04 Jul)'
+        ],
+        datasets: [{
+            data: [55.1, 49.4, 47.7, 41.0, 39.2, 39.2, 35.4, 25.4, 25.4, 24.8, 19.8, 19.8, 16.0, 15.9, 14.3, 12.4,
+                10.4, 10.4, 10.1, 10.1, -10.5, -10.6, -11.1, -11.4, -13.3, -14.3, -15.1, -20.0, -20.2, -20.2
+            ],
+            backgroundColor: (ctx) => { const v = ctx.dataset.data[ctx.dataIndex]; if (v > 40) return NEG;
+                if (v > 15) return WARN; if (v < 0) return SKY; return GOLD; },
+            borderRadius: 3,
+            barPercentage: 0.72
+        }]
+    },
+    options: {
+        indexAxis: 'y', maintainAspectRatio: false, responsive: true,
+        plugins: {
+            legend: { display: false },
+            datalabels: {
+                color: NAVY,
+                font: { family: 'Plus Jakarta Sans', weight: '700', size: 10 },
+                anchor: (ctx) => ctx.dataset.data[ctx.dataIndex] >= 0 ? 'end' : 'start',
+                align: (ctx) => ctx.dataset.data[ctx.dataIndex] >= 0 ? 'end' : 'start',
+                offset: 8,
+                formatter: (v) => (v > 0 ? '+' : '') + v.toFixed(0) + '%'
+            }
+        },
+        scales: { x: { ...axisGrid, ticks: { ...axisGrid.ticks, callback: (v) => v + '%' } }, y: axisPlain }
+    }
+});
+</script>
+
+</body>
+</html>
